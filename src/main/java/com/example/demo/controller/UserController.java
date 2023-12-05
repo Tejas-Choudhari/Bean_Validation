@@ -23,8 +23,6 @@ public class UserController {
 	@Autowired
 	private UserService userservice;
 
-	// @valid - unable the hibernate validation
-
 	@PostMapping("/users")
 	public ResponseEntity<User> createUser(@Valid @RequestBody User user) {
 		logMessage.info(" in the user api");
